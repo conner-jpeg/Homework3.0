@@ -49,7 +49,7 @@ if (generateBtn <=8 <128) {
 }
   else
 
-var generateBtn =generateBtn.addEventListener("click");
+var generateBtn = generateBtn.addEventListener("click");
 
 
 
