@@ -7,10 +7,10 @@
        //HOW do we make the computer know through JS that it is dealing with this particular task, interaction and password components
         //I dont think we are using for loops since they don't end but we do when password is >=8 <=128 randomized characters
          //Button must work and be communicating with JS
-          //I don't think there are any if//else statemnets 
+          //I don't think there are any if//else statemnets... well besides the user not selecting a length b/t 8 & 128 characters....
           //
          
-         // Page could look nicer (HTML//CSS)
+         
 
 
 
@@ -20,6 +20,8 @@ var generateBtn = document.querySelector("#generate");
 // Need a variable for the user's selection
 
 var passwordlength = textLength = ">=8, <=128"
+
+
 
 var passwordParts1 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var passwordParts2 = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
@@ -40,8 +42,19 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click") prompt ("please enter a password between 8 & 128 upper/lower case letters, numbers");
-passwordLength = promopt ("please enter a password between 8 & 128 upper/lower case letters, numbers ");
+// generateBtn.addEventListener("click") 
+var generateBtn = prompt("please enter a password length between 8 & 128 characters");
+if (generateBtn <=8 <128) {
+  alert("welp try again")
+}
+  else
+
+var generateBtn =generateBtn.addEventListener("click");
+
+
+
+
+//passwordLength = promopt ("please enter a password between 8 & 128 upper/lower case letters, numbers ");
 
 
   
